@@ -170,3 +170,9 @@ const myFavoriteFootballTeam = {
         },
     ],
 };
+
+Object.freeze(myFavoriteFootballTeam);
+
+// testing Object.freeze()
+myFavoriteFootballTeam.team = "USA";
+console.log(myFavoriteFootballTeam.team);
